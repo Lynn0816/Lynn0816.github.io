@@ -178,7 +178,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-04-25 15:54:37" itemprop="dateModified" datetime="2022-04-25T15:54:37+08:00">2022-04-25</time>
+                <time title="修改時間：2022-04-25 16:06:03" itemprop="dateModified" datetime="2022-04-25T16:06:03+08:00">2022-04-25</time>
               </span>
 
           
@@ -232,7 +232,7 @@
 </ul>
 <h3 id="將Hexo佈署到Github"><a href="#將Hexo佈署到Github" class="headerlink" title="將Hexo佈署到Github"></a>將Hexo佈署到Github</h3><ul>
 <li>開啟你的Github帳號，右上角<code>+</code>-&gt;<code>New repository</code></li>
-<li><code>Repository name</code>建議命名為<code>&lt;username&gt;.github.io</code><br><img src="C:/Users/Lynn/Lynn0816.github.io/source/images/screenshot-nimbusweb.me-2022.04.25-14_34_58.png" alt="新建Repository"></li>
+<li><code>Repository name</code>建議命名為<code>&lt;username&gt;.github.io</code><br><img src="https://github.com/Lynn0816/Lynn0816.github.io/blob/main/images/screenshot-nimbusweb.me-2022.04.25-14_34_58.png" alt="新建Repository"></li>
 </ul>
 <p>回到部落格目錄底下安裝插件<code>hexo-deployer-git</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
@@ -240,9 +240,9 @@
 <p>修改<code>_config.yml</code>檔案</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;username&gt;/&lt;username&gt;.github.io # repository網址</span><br><span class="line">  branch: main</span><br><span class="line">  message: Site updated: &#123;&#123; now(&#x27;YYYY-MM-DD HH:mm:ss&#x27;) &#125;&#125;)</span><br></pre></td></tr></table></figure>
 
-<p>最後要輸入以下指令，Clean and Deploy就能成功部屬並更新至Github啦</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>瀏覽器開啟<code>&lt;username&gt;.github.io</code>，就可以看到簡單的公開網頁供所有人瀏覽！</p>
+<p>最後要輸入三個指令，Clean, Generate and Deploy(清除緩存、生成靜態網頁、佈署)，就能成功部屬並更新至Github。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>瀏覽器開啟<code>&lt;username&gt;.github.io</code>，就可以看到簡單的公開網頁供所有使用者瀏覽！</p>
 
       
     </div>
