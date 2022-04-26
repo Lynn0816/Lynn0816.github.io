@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif TC:300,300italic,400,400italic,700,700italic|Pacifico:300,300italic,400,400italic,700,700italic|Zen Maru Gothic:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="前情提要 使用Hexo與Github Pages搭建個人部落格   Hexo主題有多達362種，初始主題配置為landscape，如果想更換別的主題試試看，此篇就是教各位將部落格更換與設定主題。  Hexo主題一覽">
+<meta property="og:type" content="article">
+<meta property="og:title" content="設定自己喜歡的Hexo主題&#x2F;NexT為範例">
+<meta property="og:url" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/index.html">
+<meta property="og:site_name" content="Lynn0816&#39;s Note">
+<meta property="og:description" content="前情提要 使用Hexo與Github Pages搭建個人部落格   Hexo主題有多達362種，初始主題配置為landscape，如果想更換別的主題試試看，此篇就是教各位將部落格更換與設定主題。  Hexo主題一覽">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png">
+<meta property="og:image" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-13_58_10.png">
+<meta property="article:published_time" content="2022-04-25T08:46:59.000Z">
+<meta property="article:modified_time" content="2022-04-26T13:11:04.345Z">
+<meta property="article:author" content="Lynn Wu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png">
+
+<link rel="canonical" href="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>設定自己喜歡的Hexo主題/NexT為範例 | Lynn0816's Note</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Lynn0816's Note</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Keep your eyes on the stars, and your feet on the ground.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/my-avatar-20220426.jpg">
+      <meta itemprop="name" content="Lynn Wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lynn0816's Note">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          設定自己喜歡的Hexo主題/NexT為範例
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2022-04-25 16:46:59" itemprop="dateCreated datePublished" datetime="2022-04-25T16:46:59+08:00">2022-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-04-26 21:11:04" itemprop="dateModified" datetime="2022-04-26T21:11:04+08:00">2022-04-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://lynn0816.github.io/2022/04/25/%E4%BD%BF%E7%94%A8Hexo%E8%88%87GithubPages%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA%E9%83%A8%E8%90%BD%E6%A0%BC/">使用Hexo與Github Pages搭建個人部落格</a></li>
+</ul>
+<hr>
+<p>Hexo主題有多達362種，初始主題配置為<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>，如果想更換別的主題試試看，此篇就是教各位將部落格更換與設定主題。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主題一覽</a><span id="more"></span></li>
+<li>範例︰<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">NexT</a>主題</li>
+</ul>
+<h3 id="安裝NexT主題"><a href="#安裝NexT主題" class="headerlink" title="安裝NexT主題"></a>安裝NexT主題</h3><p>到<strong>部落格目錄</strong>去下載主題，成功以後<code>themes/next</code>資料夾內會有主題相關的文件與資料。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/hexo-theme-next.git themes/next</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml的設定"><a href="#config-yml的設定" class="headerlink" title="/_config.yml的設定"></a><code>/_config.yml</code>的設定</h3><p>變更主題名稱</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme</span>: next</span><br></pre></td></tr></table></figure>
+<p>並且，設定支援繁體中文語言</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language</span>: zh-<span class="variable constant_">TW</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="themes-next-config-yml的設定"><a href="#themes-next-config-yml的設定" class="headerlink" title="/themes/next/_config.yml的設定"></a><code>/themes/next/_config.yml</code>的設定</h3><ul>
+<li>設定主題scheme<ul>
+<li>NexT有提供多種scheme作為選擇，編排與外觀各有差異，可以嘗試過後取消註解<code>#</code>自己喜愛的樣式。<code>Pisces</code>和<code>Gemini</code>是目前常見的scheme。</li>
+<li>預設<code>scheme: Muse</code></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># <span class="title class_">Schemes</span></span><br><span class="line"># <span class="attr">scheme</span>: <span class="title class_">Muse</span></span><br><span class="line"># <span class="attr">scheme</span>: <span class="title class_">Mist</span></span><br><span class="line"><span class="attr">scheme</span>: <span class="title class_">Pisces</span></span><br><span class="line"># <span class="attr">scheme</span>: <span class="title class_">Gemini</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>設定程式碼區塊Highight<ul>
+<li>NexT使用的<a target="_blank" rel="noopener" href="https://github.com/chriskempson/tomorrow-theme">程式碼區塊Highight主題</a></li>
+<li>預設<code>highlight_theme: normal</code>，目前有8種配色可以選擇，<code>night eighties</code>和<code>solarized dark</code>兩個是我蠻喜歡的配色。</li>
+<li><code>style</code>設定程式碼區塊的風格。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">codeblock</span>:</span><br><span class="line">  <span class="attr">highlight_theme</span>: night eighties   # normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span><br><span class="line">  <span class="attr">copy_button</span>:</span><br><span class="line">    <span class="attr">enable</span>: <span class="literal">true</span>                    # 開啟一鍵複製的按鈕</span><br><span class="line">    <span class="attr">show_result</span>: <span class="literal">true</span>               # 顯示複製成功</span><br><span class="line">    <span class="attr">style</span>: mac                      # 程式碼外框樣式 <span class="keyword">default</span> | flat | mac</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>設定字體樣式與大小<ul>
+<li>字體樣式可以從<a target="_blank" rel="noopener" href="https://fonts.google.com/">Google fonts</a>挑選，將名字填入<code>family</code>，若中、英想配置不同字體，則加入<code>&lt;CH fontname&gt;, &lt;EN fontname&gt;</code></li>
+<li><code>size</code> 預設為1 (16px)，因此須以<code>x.x</code><strong>比例方式</strong>設定字體大小</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">font</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span>    # 要換字體</span><br><span class="line">  <span class="attr">host</span>:</span><br><span class="line"></span><br><span class="line">  <span class="attr">global</span>:         # 所有&lt;body&gt;內的文字預設</span><br><span class="line">    <span class="attr">external</span>: <span class="literal">true</span></span><br><span class="line">    <span class="attr">family</span>: <span class="title class_">Lato</span></span><br><span class="line">    <span class="attr">size</span>:</span><br><span class="line"></span><br><span class="line">  <span class="attr">title</span>:          # 部落格標題</span><br><span class="line">    <span class="attr">external</span>: <span class="literal">true</span></span><br><span class="line">    <span class="attr">family</span>: </span><br><span class="line">    <span class="attr">size</span>:</span><br><span class="line"></span><br><span class="line">  <span class="attr">headings</span>:       # 部落格文章標題&amp;內容標題&lt;h1&gt;...&lt;h6&gt;</span><br><span class="line">    <span class="attr">external</span>: <span class="literal">true</span></span><br><span class="line">    <span class="attr">family</span>: </span><br><span class="line">    <span class="attr">size</span>:</span><br><span class="line"></span><br><span class="line">  <span class="attr">posts</span>:          # 內文</span><br><span class="line">    <span class="attr">external</span>: <span class="literal">true</span></span><br><span class="line">    <span class="attr">family</span>: </span><br><span class="line"></span><br><span class="line">  <span class="attr">codes</span>:          # 程式碼</span><br><span class="line">    <span class="attr">external</span>: <span class="literal">true</span></span><br><span class="line">    <span class="attr">family</span>: </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>側邊欄位置</p>
+<ul>
+<li><code>sidebar.position</code>可以設置<code>Right</code>、<code>Left</code></li>
+<li>Scheme設定為Pisces&#x2F;Gemini才有側邊欄</li>
+</ul>
+</li>
+<li><p>頭貼設置</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar</span>:</span><br><span class="line">  <span class="attr">url</span>: #/images/avatar.<span class="property">gif</span>  # 頭貼路徑</span><br><span class="line">  <span class="attr">rounded</span>: <span class="literal">false</span>            # 不裁切成圓形</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>社群連結<ul>
+<li><code>social</code>可以設定你的社群連結，包含Gmail、Github、FB、IG等，要呈現的請取消註解<code>#</code></li>
+<li><code>icons_only: true</code>不顯示文字，僅顯示圖示</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social</span>:</span><br><span class="line">  <span class="title class_">GitHub</span>: <span class="attr">https</span>:<span class="comment">//github.com/Lynn0816 || fab fa-github</span></span><br><span class="line">  E-<span class="title class_">Mail</span>: <span class="attr">mailto</span>:lynn860816@gmail.<span class="property">com</span> || fa fa-envelope</span><br><span class="line">  #<span class="title class_">Weibo</span>: <span class="attr">https</span>:<span class="comment">//weibo.com/yourname || fab fa-weibo</span></span><br><span class="line">  #<span class="title class_">Google</span>: <span class="attr">https</span>:<span class="comment">//plus.google.com/yourname || fab fa-google</span></span><br><span class="line">  #<span class="title class_">Twitter</span>: <span class="attr">https</span>:<span class="comment">//twitter.com/yourname || fab fa-twitter</span></span><br><span class="line">  #<span class="variable constant_">FB</span> <span class="title class_">Page</span>: <span class="attr">https</span>:<span class="comment">//www.facebook.com/yourname || fab fa-facebook</span></span><br><span class="line">  #<span class="title class_">StackOverflow</span>: <span class="attr">https</span>:<span class="comment">//stackoverflow.com/yourname || fab fa-stack-overflow</span></span><br><span class="line">  #<span class="title class_">YouTube</span>: <span class="attr">https</span>:<span class="comment">//youtube.com/yourname || fab fa-youtube</span></span><br><span class="line">  #<span class="title class_">Instagram</span>: <span class="attr">https</span>:<span class="comment">//instagram.com/yourname || fab fa-instagram</span></span><br><span class="line">  #<span class="title class_">Skype</span>: <span class="attr">skype</span>:yourname?call|chat || fab fa-skype</span><br><span class="line"></span><br><span class="line"><span class="attr">social_icons</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">icons_only</span>: <span class="literal">false</span></span><br><span class="line">  <span class="attr">transition</span>: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>閱讀進度百分比<ul>
+<li><code>sidebar: true</code>閱讀進度百分比會顯示在側邊欄<img src="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png"></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">back2top</span>:</span><br><span class="line">  <span class="attr">sidebar</span>: <span class="literal">true</span>       # 閱讀百分比顯示在側邊欄</span><br><span class="line">  <span class="attr">scrollpercent</span>: <span class="literal">true</span> # 開啟閱讀百分比，預設顯示於螢幕右下</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>閱讀進度條</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">reading_progress:</span><br><span class="line">  enable: true      # 開啟閱讀進度條</span><br><span class="line">  position: top     # top | bottom</span><br><span class="line">  color: &quot;#37c6c0&quot;  # 自訂顏色</span><br><span class="line">  height: 3px       # 進度條的寬度</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>文章圖片可以直接視窗開啟放大瀏覽 <a target="_blank" rel="noopener" href="https://fancyapps.com/docs/ui/fancybox/">Fancy</a></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fancybox: true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Canvas渲染效果<ul>
+<li>先給大家參考渲染完的效果</li>
+</ul>
+</li>
+</ul>
+<p><img src="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-13_58_10.png"></p>
+<ul>
+<li>有<code>three</code>和<code>canvas_ribbon</code>兩處可以設定。NexT最近改版後設定<code>enable: true</code>並不會顯示效果。原因是NexT包裡缺少了<code>.js</code>，因此要到部落格目錄裡先下載。</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/theme-next/theme-next-three themes/next/source/lib/three</span><br><span class="line">git clone https://github.com/theme-next/theme-next-canvas-ribbon themes/next/source/lib/canvas-ribbon</span><br></pre></td></tr></table></figure>
+<ul>
+<li>效果設定<code>enable: true</code>才能開啟，三種3D渲染效果只能擇一使用。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">three</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span>          # 開啟渲染效果</span><br><span class="line">  <span class="attr">three_waves</span>: <span class="literal">false</span>    # 以下三擇一</span><br><span class="line">  <span class="attr">canvas_lines</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">canvas_sphere</span>: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>效果設定<code>enable: true</code>才能開啟，預設緞帶寬度<code>90</code>、透明度<code>0.6</code>。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">canvas_ribbon</span>:</span><br><span class="line">  <span class="attr">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="attr">size</span>: <span class="number">90</span>      # 緞帶寬度</span><br><span class="line">  <span class="attr">alpha</span>: <span class="number">0.6</span>    # 緞帶透明度</span><br><span class="line">  <span class="attr">zIndex</span>: -<span class="number">1</span>    # 緞帶顯示的階層</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/04/25/%E4%BD%BF%E7%94%A8Hexo%E8%88%87GithubPages%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA%E9%83%A8%E8%90%BD%E6%A0%BC/" rel="prev" title="使用Hexo與Github Pages搭建個人部落格">
+      <i class="fa fa-chevron-left"></i> 使用Hexo與Github Pages搭建個人部落格
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="nav-number">1.</span> <span class="nav-text">前情提要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%9DNexT%E4%B8%BB%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">安裝NexT主題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml%E7%9A%84%E8%A8%AD%E5%AE%9A"><span class="nav-number">3.</span> <span class="nav-text">&#x2F;_config.yml的設定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#themes-next-config-yml%E7%9A%84%E8%A8%AD%E5%AE%9A"><span class="nav-number">4.</span> <span class="nav-text">&#x2F;themes&#x2F;next&#x2F;_config.yml的設定</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Lynn Wu"
+      src="/images/my-avatar-20220426.jpg">
+  <p class="site-author-name" itemprop="name">Lynn Wu</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Lynn0816" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Lynn0816" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lynn860816@gmail.com" title="E-Mail → mailto:lynn860816@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lynn Wu</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="60" alpha="0.25" zIndex="1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

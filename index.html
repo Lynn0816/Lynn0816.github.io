@@ -12,22 +12,23 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Serif TC:300,300italic,400,400italic,700,700italic|Pacifico:300,300italic,400,400italic,700,700italic|Zen Maru Gothic:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Keep your eyes on the stars, and your feet on the ground.">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Lynn0816&#39;s Note">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Lynn0816&#39;s Note">
-<meta property="og:description" content="Keep your eyes on the stars, and your feet on the ground.">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:author" content="Lynn0816">
+<meta property="article:author" content="Lynn Wu">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/">
@@ -97,6 +98,7 @@
       <h1 class="site-title">Lynn0816's Note</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">Keep your eyes on the stars, and your feet on the ground.</p>
   </div>
 
   <div class="site-nav-right">
@@ -130,10 +132,7 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -147,12 +146,90 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/my-avatar-20220426.jpg">
+      <meta itemprop="name" content="Lynn Wu">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lynn0816's Note">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/" class="post-title-link" itemprop="url">設定自己喜歡的Hexo主題/NexT為範例</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2022-04-25 16:46:59" itemprop="dateCreated datePublished" datetime="2022-04-25T16:46:59+08:00">2022-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-04-26 21:11:04" itemprop="dateModified" datetime="2022-04-26T21:11:04+08:00">2022-04-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://lynn0816.github.io/2022/04/25/%E4%BD%BF%E7%94%A8Hexo%E8%88%87GithubPages%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA%E9%83%A8%E8%90%BD%E6%A0%BC/">使用Hexo與Github Pages搭建個人部落格</a></li>
+</ul>
+<hr>
+<p>Hexo主題有多達362種，初始主題配置為<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>，如果想更換別的主題試試看，此篇就是教各位將部落格更換與設定主題。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主題一覽</a>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E4%BD%BF%E7%94%A8Hexo%E8%88%87GithubPages%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA%E9%83%A8%E8%90%BD%E6%A0%BC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lynn0816">
-      <meta itemprop="description" content="Keep your eyes on the stars, and your feet on the ground.">
+      <meta itemprop="image" content="/images/my-avatar-20220426.jpg">
+      <meta itemprop="name" content="Lynn Wu">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -170,10 +247,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2022-04-25 16:32:43 / 修改時間：16:41:09" itemprop="dateCreated datePublished" datetime="2022-04-25T16:32:43+08:00">2022-04-25</time>
+              <time title="創建時間：2022-04-25 16:32:43" itemprop="dateCreated datePublished" datetime="2022-04-25T16:32:43+08:00">2022-04-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2022-04-26 14:46:09" itemprop="dateModified" datetime="2022-04-26T14:46:09+08:00">2022-04-26</time>
+              </span>
 
           
 
@@ -194,56 +277,14 @@
 <li>安全性高</li>
 </ul>
 <p>Hexo是基於Node.js的框架，使用對於網頁開發者很熟悉的程式語言JavaScript，支援<a target="_blank" rel="noopener" href="https://markdown.tw/">Markdown語法</a>建構部落格文章，只需要一個指令便可以佈署到Github，截至目前有362個主題可供選用，吸引我的一大原因也是因為<strong>Hexo的創建者是台灣人</strong>，對於東方語言的支持友善，擁有廣大的台灣與中國使用者。</p>
-<h3 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h3><p>確認環境已安裝下列工具</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a></li>
-<li><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a>︰版本需不低於8.10，建議使用10.0及以上版本</li>
-</ul>
-<h3 id="Hexo安裝"><a href="#Hexo安裝" class="headerlink" title="Hexo安裝"></a>Hexo安裝</h3><p>開啟cmd透過npm來安裝Hexo</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>測試Hexo是否安裝成功</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo version</span><br><span class="line"># or</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<h3 id="Hexo初始化"><a href="#Hexo初始化" class="headerlink" title="Hexo初始化"></a>Hexo初始化</h3><p>接著是初始化Hexo。<br>首先選擇好路徑，創立一個資料夾<code>&lt;folder&gt;</code>作為將來的部落格目錄，所有有關部落格的文件、資料都將儲存於此路徑底下。</p>
-<ul>
-<li>請重新命名<code>&lt;folder&gt;</code>，可以使用<code>&lt;username&gt;.github.io</code>作為資料夾名稱方便作業。</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>初始化完成，瀏覽新創立的資料夾，該目錄底下會有一些自動產生的檔案。</p>
-<ul>
-<li><code>themes</code> 是存放Hexo主題的資料夾</li>
-<li><code>source</code> 利用Markdown撰寫的部落格文章<code>(.md)</code>將存放在這裡</li>
-<li><code>_config.yml</code> 配置大部份的部落格設定的重要文檔</li>
-</ul>
-<p>在本地端啟動Hexo server來預覽網頁。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<ul>
-<li>瀏覽器開啟<code>http://localhost:4000/</code></li>
-<li>Hexo初始主題配置為<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a></li>
-<li>下篇文章會教學如何更換主題與設定(<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主題大集合</a>)</li>
-</ul>
-<h3 id="將Hexo佈署到Github"><a href="#將Hexo佈署到Github" class="headerlink" title="將Hexo佈署到Github"></a>將Hexo佈署到Github</h3><ul>
-<li>開啟你的Github帳號，右上角<code>+</code>-&gt;<code>New repository</code></li>
-<li><code>Repository name</code>建議命名為<code>&lt;username&gt;.github.io</code></li>
-</ul>
-<p><img src="/images%5Cscreenshot-nimbusweb.me-2022.04.25-14_34_58.png" alt="新建Repository"></p>
-<p>回到部落格目錄底下安裝插件<code>hexo-deployer-git</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>修改<code>_config.yml</code>檔案，<code>repo</code>是剛建立的Repository網址。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy</span>:</span><br><span class="line">  <span class="attr">type</span>: git</span><br><span class="line">  <span class="attr">repo</span>: <span class="attr">https</span>:<span class="comment">//github.com/&lt;username&gt;/&lt;username&gt;.github.io</span></span><br><span class="line">  <span class="attr">branch</span>: main</span><br><span class="line">  <span class="attr">message</span>: <span class="title class_">Site</span> <span class="attr">updated</span>: &#123;&#123; <span class="title function_">now</span>(<span class="string">&#x27;YYYY-MM-DD HH:mm:ss&#x27;</span>) &#125;&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>最後要輸入三個指令，Clean, Generate and Deploy(清除緩存、生成靜態網頁、佈署)，就能成功部屬並更新至Github。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>瀏覽器開啟<code>&lt;username&gt;.github.io</code>，就可以看到簡單的公開網頁供所有使用者瀏覽！</p>
-<hr>
-<h3 id="延伸閱讀"><a href="#延伸閱讀" class="headerlink" title="延伸閱讀"></a>延伸閱讀</h3><ul>
-<li><a href="">更換不同風格的Hexo主題</a></li>
-<li><a href="">新增部落格文章和基本設定</a></li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/04/25/%E4%BD%BF%E7%94%A8Hexo%E8%88%87GithubPages%E6%90%AD%E5%BB%BA%E5%80%8B%E4%BA%BA%E9%83%A8%E8%90%BD%E6%A0%BC/#more" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -265,9 +306,9 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/22/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Lynn0816">
-      <meta itemprop="description" content="Keep your eyes on the stars, and your feet on the ground.">
+      <meta itemprop="image" content="/images/my-avatar-20220426.jpg">
+      <meta itemprop="name" content="Lynn Wu">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -386,15 +427,17 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Lynn0816</p>
-  <div class="site-description" itemprop="description">Keep your eyes on the stars, and your feet on the ground.</div>
+    <img class="site-author-image" itemprop="image" alt="Lynn Wu"
+      src="/images/my-avatar-20220426.jpg">
+  <p class="site-author-name" itemprop="name">Lynn Wu</p>
+  <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -412,6 +455,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -434,7 +481,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Lynn0816</span>
+  <span class="author" itemprop="copyrightHolder">Lynn Wu</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 強力驅動
   </div>
@@ -453,7 +500,10 @@
   </div>
 
   
+  <script size="60" alpha="0.25" zIndex="1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -468,6 +518,8 @@
 <script src="/js/next-boot.js"></script>
 
 
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
 
 
   
