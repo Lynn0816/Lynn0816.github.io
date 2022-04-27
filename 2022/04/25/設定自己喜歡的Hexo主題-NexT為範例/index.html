@@ -18,7 +18,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="前情提要 使用Hexo與Github Pages搭建個人部落格   Hexo主題有多達362種，初始主題配置為landscape，如果想更換別的主題試試看，此篇就是教各位將部落格更換與設定主題。  Hexo主題一覽">
@@ -31,7 +31,7 @@
 <meta property="og:image" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png">
 <meta property="og:image" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-13_58_10.png">
 <meta property="article:published_time" content="2022-04-25T08:46:59.000Z">
-<meta property="article:modified_time" content="2022-04-26T14:29:04.504Z">
+<meta property="article:modified_time" content="2022-04-27T01:27:31.686Z">
 <meta property="article:author" content="Lynn Wu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png">
@@ -182,7 +182,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2022-04-26 22:29:04" itemprop="dateModified" datetime="2022-04-26T22:29:04+08:00">2022-04-26</time>
+                <time title="修改時間：2022-04-27 09:27:31" itemprop="dateModified" datetime="2022-04-27T09:27:31+08:00">2022-04-27</time>
               </span>
 
           
@@ -233,7 +233,8 @@
 
 <ul>
 <li><h4 id="設定字體樣式與大小"><a href="#設定字體樣式與大小" class="headerlink" title="設定字體樣式與大小"></a>設定字體樣式與大小</h4><ul>
-<li>字體樣式可以從<a target="_blank" rel="noopener" href="https://fonts.google.com/">Google fonts</a>挑選，將名字填入<code>family</code>，若中、英想配置不同字體，則加入<code>&lt;CH fontname&gt;, &lt;EN fontname&gt;</code></li>
+<li>字體樣式可以從<a target="_blank" rel="noopener" href="https://fonts.google.com/">Google fonts</a>挑選，字體名稱填入<code>family</code></li>
+<li>若中、英想配置不同字體，則加入<code>&lt;CH fontname&gt;, &lt;EN fontname&gt;</code></li>
 <li><code>size</code> 預設為1 (16px)，因此須以<code>x.x</code><strong>比例方式</strong>設定字體大小</li>
 </ul>
 </li>
@@ -261,7 +262,7 @@
 
 <ul>
 <li><h4 id="閱讀進度百分比"><a href="#閱讀進度百分比" class="headerlink" title="閱讀進度百分比"></a>閱讀進度百分比</h4><ul>
-<li><code>sidebar: true</code>閱讀進度百分比會顯示在側邊欄<img src="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png"></li>
+<li><code>sidebar: true</code>閱讀進度百分比會顯示在側邊欄<img data-src="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-15_36_13.png"></li>
 </ul>
 </li>
 </ul>
@@ -283,7 +284,7 @@
 </ul>
 </li>
 </ul>
-<p><img src="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-13_58_10.png"></p>
+<p><img data-src="/2022/04/25/%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%B7%B1%E5%96%9C%E6%AD%A1%E7%9A%84Hexo%E4%B8%BB%E9%A1%8C-NexT%E7%82%BA%E7%AF%84%E4%BE%8B/screenshot-localhost_4000-2022.04.26-13_58_10.png"></p>
 <ul>
 <li>有<code>three</code>和<code>canvas_ribbon</code>兩處可以設定。NexT最近改版後設定<code>enable: true</code>並不會顯示效果。原因是NexT包裡缺少了<code>.js</code>，因此要到部落格目錄裡先下載。</li>
 </ul>
@@ -299,11 +300,13 @@
 
 <ul>
 <li><h4 id="自定義部落格風格、配色"><a href="#自定義部落格風格、配色" class="headerlink" title="自定義部落格風格、配色"></a>自定義部落格風格、配色</h4><ul>
-<li>在<code>部落格目錄/themes/next/source/css/</code>有一些<code>.styl</code>可供使用者自定義，如左側的sidebar的highlight顏色可以在<code>/_variables/&lt;shceme_name&gt;.styl</code>中更改，<code>/_variables/base.styl</code>，有興趣的各位可以自己摸索</li>
-<li><a target="_blank" rel="noopener" href="https://www.toolskk.com/color">色碼表&amp;調色盤</a><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$sidebar-<span class="selector-tag">nav</span>-hover-<span class="attribute">color</span>          = $orange;</span><br><span class="line">$sidebar-highlight                = $orange;</span><br></pre></td></tr></table></figure></li>
+<li>在<code>部落格目錄/themes/next/source/css/</code>有一些<code>.styl</code>可供使用者自定義</li>
+<li>例如︰左側的sidebar的highlight顏色可以在<code>/_variables/&lt;shceme_name&gt;.styl</code>中更改，<code>/_variables/base.styl</code>、<code>/_schemes/Pisces/_header.styl</code>等等，有興趣的各位可以自己摸索</li>
+<li><a target="_blank" rel="noopener" href="https://www.toolskk.com/color">色碼表&amp;調色盤</a></li>
 </ul>
 </li>
 </ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$sidebar-<span class="selector-tag">nav</span>-hover-<span class="attribute">color</span>          = $orange;</span><br><span class="line">$sidebar-highlight                = $orange;</span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -464,6 +467,7 @@
   <script src="/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 

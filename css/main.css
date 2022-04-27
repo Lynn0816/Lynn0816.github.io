@@ -1193,7 +1193,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b9ff85;
+  background: #733345;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1439,6 +1439,7 @@ pre .javascript .function {
   color: #ff0000;
   display: inline-block;
   margin: 0 5px;
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .powered-by,
 .theme-info {
@@ -1559,6 +1560,9 @@ pre .javascript .function {
 .post-button {
   margin-top: 40px;
   text-align: center;
+  padding: 25px;
+  webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 .use-motion .post-block,
 .use-motion .pagination,
@@ -2247,7 +2251,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .site-brand-container {
-  background: #222;
+  background: #008080;
 }
 @media (max-width: 991px) {
   .site-brand-container {
