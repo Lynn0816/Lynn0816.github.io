@@ -5,7 +5,7 @@
   --text-color: #555;
   --blockquote-color: #666;
   --link-color: #555;
-  --link-hover-color: #008080;
+  --link-hover-color: #20736f;
   --brand-color: #fff;
   --brand-hover-color: #fff;
   --table-row-odd-bg-color: #f9f9f9;
@@ -167,7 +167,7 @@ template {
   display: none;
 }
 ::selection {
-  background: #008080;
+  background: #20736f;
   color: #eee;
 }
 html,
@@ -1285,7 +1285,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fba430;
+  background: #45f5b6;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1372,14 +1372,14 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav li:hover {
-  color: #20b2aa;
+  color: #37c6c0;
 }
 .sidebar-nav .sidebar-nav-active {
-  border-bottom-color: #20b2aa;
-  color: #20b2aa;
+  border-bottom-color: #37c6c0;
+  color: #37c6c0;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #20b2aa;
+  color: #37c6c0;
 }
 .sidebar-panel {
   display: none;
@@ -1408,7 +1408,7 @@ pre .javascript .function {
   }
 }
 .sidebar-toggle:hover .toggle-line {
-  background: #20b2aa;
+  background: #37c6c0;
 }
 .post-toc {
   font-size: 0.875em;
@@ -1447,14 +1447,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  border-bottom-color: #20b2aa;
-  color: #20b2aa;
+  border-bottom-color: #37c6c0;
+  color: #37c6c0;
 }
 .post-toc .nav .active-current > a {
-  color: #20b2aa;
+  color: #37c6c0;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #20b2aa;
+  color: #37c6c0;
 }
 .site-state {
   display: flex;
@@ -1601,7 +1601,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
 }
 .back-to-top {
-  background: #008080;
+  background: #20736f;
   bottom: -100px;
   box-sizing: border-box;
   color: #fff;
@@ -1615,7 +1615,7 @@ pre .javascript .function {
   width: initial;
 }
 .back-to-top:hover {
-  color: #20b2aa;
+  color: #37c6c0;
 }
 .back-to-top.back-to-top-on {
   bottom: 30px;
@@ -2357,7 +2357,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .site-brand-container {
-  background: #008080;
+  background: #20736f;
 }
 @media (max-width: 991px) {
   .site-brand-container {
@@ -2456,14 +2456,14 @@ ul.breadcrumb li + li:last-child {
 .sub-menu .menu-item a:hover,
 .sub-menu .menu-item span.exturl:hover {
   background: transparent;
-  color: #20b2aa;
+  color: #37c6c0;
 }
 .sub-menu .menu-item-active a {
-  border-bottom-color: #20b2aa;
-  color: #20b2aa;
+  border-bottom-color: #37c6c0;
+  color: #37c6c0;
 }
 .sub-menu .menu-item-active a:hover {
-  border-bottom-color: #20b2aa;
+  border-bottom-color: #37c6c0;
 }
 .sidebar {
   background: var(--body-bg-color);
