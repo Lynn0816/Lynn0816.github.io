@@ -31,7 +31,7 @@
 <meta property="og:description" content="使用情況 有時候一次累積多個文章未發布，當其中的幾篇還沒編輯完成、或者不想被瀏覽，就需要draft來協助將草稿文章、正式文章分開，避免未完成的文章不小心被放置到部落格的窘境。 Hexo的作法是將草稿與正式文章透過不同資料夾來區分，草稿文章會存放於source&#x2F;_drafts&#x2F;，正式文章會存放於source&#x2F;_posts&#x2F;當中，hexo d指令只會針對正式文章佈署至網路。">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2022-05-01T13:49:48.000Z">
-<meta property="article:modified_time" content="2022-05-03T14:45:36.276Z">
+<meta property="article:modified_time" content="2022-05-04T14:46:44.807Z">
 <meta property="article:author" content="Lynn Wu">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Blog">
@@ -215,7 +215,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>607</span>
+              <span>620</span>
             </span>
             <span class="post-meta-item" title="所需閱讀時間">
               <span class="post-meta-item-icon">
@@ -243,9 +243,9 @@
 <p>有分類與標籤需求的人，一樣可以到<code>scaffolds/draft.md</code>調整草稿的預設樣板。請參考<a target="_blank" rel="noopener" href="https://lynn0816.github.io/2022/04/28/%E4%BD%BF%E7%94%A8Hexo%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0%E3%80%81%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4%E8%88%87%E8%A8%AD%E5%AE%9A/#%E6%96%B0%E5%A2%9E%E6%A8%99%E7%B1%A4%E9%A0%81%E9%9D%A2%E8%88%87%E5%88%86%E9%A1%9E%E9%A0%81%E9%9D%A2">新增標籤與分類頁面</a>。</p>
 <h3 id="預覽草稿"><a href="#預覽草稿" class="headerlink" title="預覽草稿"></a>預覽草稿</h3><p>只要文章是草稿模式，就不會跟著<code>hexo d</code>被一起佈署到<code>&lt;username&gt;.github.io</code>。<br>如果需要預覽網頁，執行以下指令，一樣可以在本地端<code>http://localhost:4000/</code>預覽網頁。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s --draft</span><br></pre></td></tr></table></figure>
-<h3 id="將草稿轉為正式文章並佈署至Github"><a href="#將草稿轉為正式文章並佈署至Github" class="headerlink" title="將草稿轉為正式文章並佈署至Github"></a>將草稿轉為正式文章並佈署至Github</h3><p>草稿完成並想轉為正式文章並公開發佈到部落格，執行以下指令，在<code>source/posts/</code>的文章將一併佈署至Github上。</p>
+<h3 id="將草稿轉為正式文章並佈署至Github"><a href="#將草稿轉為正式文章並佈署至Github" class="headerlink" title="將草稿轉為正式文章並佈署至Github"></a>將草稿轉為正式文章並佈署至Github</h3><p>草稿完成並想轉為正式文章並公開發佈到部落格，執行以下指令，在<code>source/_posts/</code>的正式文章將一併佈署至Github上。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo publish &quot;&lt;文章標題&gt;&quot;   # &lt;文章標題&gt;不包含副檔名`.md`</span><br><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>當然，如果你有不想公開的文章，可以一直存放在draft資料夾內不會有影響。</p>
+<p>當然，如果你有不想公開的文章，可以一直存放在<code>source/_drafts/</code>資料夾內不會有影響。</p>
 
     </div>
 
