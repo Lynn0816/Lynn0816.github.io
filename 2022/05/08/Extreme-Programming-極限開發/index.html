@@ -23,21 +23,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"expandIn"}}};
   </script>
 
-  <meta name="description" content="使用情況 有時候一次累積多個文章未發布，當其中的幾篇還沒編輯完成、或者不想被瀏覽，就需要draft來協助將草稿文章、正式文章分開，避免未完成的文章不小心被放置到部落格的窘境。 Hexo的作法是將草稿與正式文章透過不同資料夾來區分，草稿文章會存放於source&#x2F;_drafts&#x2F;，正式文章會存放於source&#x2F;_posts&#x2F;當中，hexo d指令只會針對正式文章佈署至網路。">
+  <meta name="description" content="前言 極限開發(Extreme Programming, XP)是敏捷軟體開發的方法之一，最早起源於1996年，目的是強調團隊合作，並且認為軟體需求的不斷變化是很正常的，與其在專案初始時費心架構好嚴謹的一套應變方法，不如在專案的任何週期去適應變化，能高效產出高品質的軟體，這樣的想法起初是為了彈性適應不同企業的開發環境。 以下將說明Extreme Programming的基本行為、價值、原則與實踐。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Hexo建立文章草稿與正式發佈">
-<meta property="og:url" content="http://example.com/2022/05/01/%E4%BD%BF%E7%94%A8Hexo%E5%BB%BA%E7%AB%8B%E6%96%87%E7%AB%A0%E8%8D%89%E7%A8%BF%E8%88%87%E6%AD%A3%E5%BC%8F%E7%99%BC%E4%BD%88/index.html">
+<meta property="og:title" content="Extreme Programming 極限開發">
+<meta property="og:url" content="http://example.com/2022/05/08/Extreme-Programming-%E6%A5%B5%E9%99%90%E9%96%8B%E7%99%BC/index.html">
 <meta property="og:site_name" content="Lynn0816&#39;s Note">
-<meta property="og:description" content="使用情況 有時候一次累積多個文章未發布，當其中的幾篇還沒編輯完成、或者不想被瀏覽，就需要draft來協助將草稿文章、正式文章分開，避免未完成的文章不小心被放置到部落格的窘境。 Hexo的作法是將草稿與正式文章透過不同資料夾來區分，草稿文章會存放於source&#x2F;_drafts&#x2F;，正式文章會存放於source&#x2F;_posts&#x2F;當中，hexo d指令只會針對正式文章佈署至網路。">
+<meta property="og:description" content="前言 極限開發(Extreme Programming, XP)是敏捷軟體開發的方法之一，最早起源於1996年，目的是強調團隊合作，並且認為軟體需求的不斷變化是很正常的，與其在專案初始時費心架構好嚴謹的一套應變方法，不如在專案的任何週期去適應變化，能高效產出高品質的軟體，這樣的想法起初是為了彈性適應不同企業的開發環境。 以下將說明Extreme Programming的基本行為、價值、原則與實踐。">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2022-05-01T13:49:48.000Z">
-<meta property="article:modified_time" content="2022-05-08T07:00:32.441Z">
+<meta property="article:published_time" content="2022-05-08T07:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-08T07:00:00.058Z">
 <meta property="article:author" content="Lynn Wu">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Blog">
+<meta property="article:tag" content="Agile Development">
+<meta property="article:tag" content="Extreme Programming">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/05/01/%E4%BD%BF%E7%94%A8Hexo%E5%BB%BA%E7%AB%8B%E6%96%87%E7%AB%A0%E8%8D%89%E7%A8%BF%E8%88%87%E6%AD%A3%E5%BC%8F%E7%99%BC%E4%BD%88/">
+<link rel="canonical" href="http://example.com/2022/05/08/Extreme-Programming-%E6%A5%B5%E9%99%90%E9%96%8B%E7%99%BC/">
 
 
 <script id="page-configurations">
@@ -50,7 +50,7 @@
   };
 </script>
 
-  <title>使用Hexo建立文章草稿與正式發佈 | Lynn0816's Note</title>
+  <title>Extreme Programming 極限開發 | Lynn0816's Note</title>
   
 
 
@@ -174,7 +174,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/01/%E4%BD%BF%E7%94%A8Hexo%E5%BB%BA%E7%AB%8B%E6%96%87%E7%AB%A0%E8%8D%89%E7%A8%BF%E8%88%87%E6%AD%A3%E5%BC%8F%E7%99%BC%E4%BD%88/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/08/Extreme-Programming-%E6%A5%B5%E9%99%90%E9%96%8B%E7%99%BC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/my-avatar-20220426.jpg">
@@ -187,7 +187,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          使用Hexo建立文章草稿與正式發佈
+          Extreme Programming 極限開發
         </h1>
 
         <div class="post-meta">
@@ -197,7 +197,7 @@
               </span>
               <span class="post-meta-item-text">發表於</span>
 
-              <time title="創建時間：2022-05-01 21:49:48" itemprop="dateCreated datePublished" datetime="2022-05-01T21:49:48+08:00">2022-05-01</time>
+              <time title="創建時間：2022-05-08 15:00:00" itemprop="dateCreated datePublished" datetime="2022-05-08T15:00:00+08:00">2022-05-08</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -205,7 +205,7 @@
               </span>
               <span class="post-meta-item-text">分類於</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+                  <a href="/categories/%E6%95%8F%E6%8D%B7%E9%96%8B%E7%99%BC/" itemprop="url" rel="index"><span itemprop="name">敏捷開發</span></a>
                 </span>
             </span>
 
@@ -215,7 +215,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>620</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="所需閱讀時間">
               <span class="post-meta-item-icon">
@@ -234,19 +234,94 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="使用情況"><a href="#使用情況" class="headerlink" title="使用情況"></a>使用情況</h3><ul>
-<li>有時候一次累積多個文章未發布，當其中的幾篇<strong>還沒編輯完成、或者不想被瀏覽</strong>，就需要draft來協助將草稿文章、正式文章分開，避免未完成的文章不小心被放置到部落格的窘境。</li>
-<li>Hexo的作法是將草稿與正式文章透過不同資料夾來區分，<strong>草稿文章</strong>會存放於<code>source/_drafts/</code>，<strong>正式文章</strong>會存放於<code>source/_posts/</code>當中，<code>hexo d</code>指令只會針對正式文章佈署至網路。<span id="more"></span></li>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul>
+<li><strong>極限開發</strong>(Extreme Programming, XP)是<strong>敏捷軟體開發</strong>的方法之一，最早起源於1996年，目的是強調團隊合作，並且認為軟體需求的不斷變化是很正常的，與其在專案初始時費心架構好嚴謹的一套應變方法，不如在專案的任何週期去適應變化，能高效產出高品質的軟體，這樣的想法起初是為了<strong>彈性適應不同企業的開發環境</strong>。</li>
+<li>以下將說明Extreme Programming的基本行為、價值、原則與實踐。</li>
 </ul>
-<h3 id="新增草稿"><a href="#新增草稿" class="headerlink" title="新增草稿"></a>新增草稿</h3><p>在<strong>部落格目錄</strong>執行指令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &quot;&lt;文章標題&gt;&quot;</span><br></pre></td></tr></table></figure>
-<p>有分類與標籤需求的人，一樣可以到<code>scaffolds/draft.md</code>調整草稿的預設樣板。請參考<a target="_blank" rel="noopener" href="https://lynn0816.github.io/2022/04/28/%E4%BD%BF%E7%94%A8Hexo%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0%E3%80%81%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4%E8%88%87%E8%A8%AD%E5%AE%9A/#%E6%96%B0%E5%A2%9E%E6%A8%99%E7%B1%A4%E9%A0%81%E9%9D%A2%E8%88%87%E5%88%86%E9%A1%9E%E9%A0%81%E9%9D%A2">新增標籤與分類頁面</a>。</p>
-<h3 id="預覽草稿"><a href="#預覽草稿" class="headerlink" title="預覽草稿"></a>預覽草稿</h3><p>只要文章是草稿模式，就不會跟著<code>hexo d</code>被一起佈署到<code>&lt;username&gt;.github.io</code>。<br>如果需要預覽網頁，執行以下指令，一樣可以在本地端<code>http://localhost:4000/</code>預覽網頁。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s --draft</span><br></pre></td></tr></table></figure>
-
-<h3 id="將草稿轉為正式文章並佈署至Github"><a href="#將草稿轉為正式文章並佈署至Github" class="headerlink" title="將草稿轉為正式文章並佈署至Github"></a>將草稿轉為正式文章並佈署至Github</h3><p>草稿完成並想轉為正式文章並公開發佈到部落格，執行以下指令，在<code>source/_posts/</code>的正式文章將一併佈署至Github上。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo publish &quot;&lt;文章標題&gt;&quot;   # &lt;文章標題&gt;不包含副檔名`.md`</span><br><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>當然，如果你有不想公開的文章，可以一直存放在<code>source/_drafts/</code>資料夾內不會有影響。</p>
+<h3 id="四種行為-Activities"><a href="#四種行為-Activities" class="headerlink" title="四種行為(Activities)"></a>四種行為(Activities)</h3><p>軟體開發的時候運作的四種行為︰</p>
+<span id="more"></span>
+<ul>
+<li><h4 id="Coding-開發"><a href="#Coding-開發" class="headerlink" title="Coding(開發)"></a>Coding(開發)</h4><ul>
+<li>找出最適合的解決方案</li>
+<li>交流programmer之間的想法</li>
+</ul>
+</li>
+<li><h4 id="Testing-測試"><a href="#Testing-測試" class="headerlink" title="Testing(測試)"></a>Testing(測試)</h4><ul>
+<li><strong>Unit Test</strong>確定功能是否如預期執行。自動化測試去盡可能測試每一段程式碼，當測試通過才代表這一段程式碼完成，接著才繼續下一段的開發。</li>
+</ul>
+</li>
+<li><h4 id="Listening-聆聽"><a href="#Listening-聆聽" class="headerlink" title="Listening(聆聽)"></a>Listening(聆聽)</h4><ul>
+<li>聆聽並了解客戶實際的目的與需求</li>
+</ul>
+</li>
+<li><h4 id="Designing-設計"><a href="#Designing-設計" class="headerlink" title="Designing(設計)"></a>Designing(設計)</h4><ul>
+<li>好的設計避免系統內的互相依賴關係，因此改變系統的一個部分不會影響系統的其他部分是很重要的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="五大價值-Values"><a href="#五大價值-Values" class="headerlink" title="五大價值(Values)"></a>五大價值(Values)</h3><ul>
+<li><h4 id="Communication-溝通"><a href="#Communication-溝通" class="headerlink" title="Communication(溝通)"></a>Communication(溝通)</h4><ul>
+<li>使用簡單設計、頻繁溝通與回饋來取代複雜的開發文件。</li>
+</ul>
+</li>
+<li><h4 id="Simplicity-簡單"><a href="#Simplicity-簡單" class="headerlink" title="Simplicity(簡單)"></a>Simplicity(簡單)</h4><ul>
+<li>鼓勵使用簡單的解決方案開始，也就是<strong>著眼於當下</strong>的需求做開發與設計，因為不確定的未來耗費資源可能導致不必要的風險。</li>
+</ul>
+</li>
+<li><h4 id="Feedback-回饋"><a href="#Feedback-回饋" class="headerlink" title="Feedback(回饋)"></a>Feedback(回饋)</h4><ul>
+<li>系統的缺陷可以透過Unit Test來檢測、驗收測試(客戶)與定期集成測試來獲得回饋。</li>
+</ul>
+</li>
+<li><h4 id="Respect-尊重"><a href="#Respect-尊重" class="headerlink" title="Respect(尊重)"></a>Respect(尊重)</h4><ul>
+<li>團隊中的<strong>任何人</strong>都應當被重視，一同以高品質追求最佳解決方案為目標。</li>
+</ul>
+</li>
+<li><h4 id="Courage-勇氣"><a href="#Courage-勇氣" class="headerlink" title="Courage(勇氣)"></a>Courage(勇氣)</h4><ul>
+<li>Extreme Programming是重視當前的需求，針對並解決問題。因此Programmer要習慣重構程式碼。勇於刪除過時的程式碼，無論當時花費了多少努力。</li>
+</ul>
+</li>
+</ul>
+<h3 id="三大原則-Principles"><a href="#三大原則-Principles" class="headerlink" title="三大原則(Principles)"></a>三大原則(Principles)</h3><ul>
+<li><h4 id="Feedback-快速回饋"><a href="#Feedback-快速回饋" class="headerlink" title="Feedback(快速回饋)"></a>Feedback(快速回饋)</h4><ul>
+<li>與<strong>客戶不斷的交流</strong>，掌握系統的開發方向。</li>
+</ul>
+</li>
+<li><h4 id="Assuming-simplicity-簡單假設"><a href="#Assuming-simplicity-簡單假設" class="headerlink" title="Assuming simplicity(簡單假設)"></a>Assuming simplicity(簡單假設)</h4><ul>
+<li>考慮眼前的需求來完成任務，不做額外考量程式的重用性。</li>
+</ul>
+</li>
+<li><h4 id="Embracing-change-包容變化"><a href="#Embracing-change-包容變化" class="headerlink" title="Embracing change(包容變化)"></a>Embracing change(包容變化)</h4><ul>
+<li>不確定的因素總是存在，以自然的<strong>心態</strong>因應客戶的需求變化。</li>
+</ul>
+</li>
+</ul>
+<h3 id="實踐-Practice"><a href="#實踐-Practice" class="headerlink" title="實踐(Practice)"></a>實踐(Practice)</h3><ul>
+<li><h4 id="Fine-scale-feedback-精細回饋"><a href="#Fine-scale-feedback-精細回饋" class="headerlink" title="Fine-scale feedback(精細回饋)"></a>Fine-scale feedback(精細回饋)</h4><ul>
+<li>Pair programming: 兩個programmer一同工作，一個人coding、一個人審查code，互相交流溝通並輪流互換角色。</li>
+<li>Planning game</li>
+<li>Test-driven development: <strong>先寫測試再開發</strong>，有助於釐清程式的設計。</li>
+<li>Whole team</li>
+</ul>
+</li>
+<li><h4 id="Continuous-process-持續處理"><a href="#Continuous-process-持續處理" class="headerlink" title="Continuous process(持續處理)"></a>Continuous process(持續處理)</h4><ul>
+<li>Continuous integration: 每個programmer在提交程式碼之前，必須通過所有的單元測試、整合測試。</li>
+<li>Refactoring or design improvement: 增加程式碼的可讀性或簡化結構。</li>
+<li>Small releases</li>
+</ul>
+</li>
+<li><h4 id="Shared-understanding-共識"><a href="#Shared-understanding-共識" class="headerlink" title="Shared understanding(共識)"></a>Shared understanding(共識)</h4><ul>
+<li>Coding standards</li>
+<li>Collective code ownership</li>
+<li>Simple design</li>
+<li>System metaphor</li>
+</ul>
+</li>
+<li><h4 id="Programmer-welfare"><a href="#Programmer-welfare" class="headerlink" title="Programmer welfare"></a>Programmer welfare</h4><ul>
+<li>Sustainable pace</li>
+</ul>
+</li>
+</ul>
+<h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Extreme_programming">Wikipedia</a></p>
 
     </div>
 
@@ -256,8 +331,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-              <a href="/tags/Blog/" rel="tag"># Blog</a>
+              <a href="/tags/Agile-Development/" rel="tag"># Agile Development</a>
+              <a href="/tags/Extreme-Programming/" rel="tag"># Extreme Programming</a>
           </div>
 
         
@@ -266,13 +341,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/04/28/%E4%BD%BF%E7%94%A8Hexo%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0%E3%80%81%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4%E8%88%87%E8%A8%AD%E5%AE%9A/" rel="prev" title="使用Hexo新增文章、基本操作指令與設定">
-      <i class="fa fa-chevron-left"></i> 使用Hexo新增文章、基本操作指令與設定
+    <a href="/2022/05/01/%E4%BD%BF%E7%94%A8Hexo%E5%BB%BA%E7%AB%8B%E6%96%87%E7%AB%A0%E8%8D%89%E7%A8%BF%E8%88%87%E6%AD%A3%E5%BC%8F%E7%99%BC%E4%BD%88/" rel="prev" title="使用Hexo建立文章草稿與正式發佈">
+      <i class="fa fa-chevron-left"></i> 使用Hexo建立文章草稿與正式發佈
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/05/08/Extreme-Programming-%E6%A5%B5%E9%99%90%E9%96%8B%E7%99%BC/" rel="next" title="Extreme Programming 極限開發">
-      Extreme Programming 極限開發 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -331,7 +403,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%83%85%E6%B3%81"><span class="nav-number">1.</span> <span class="nav-text">使用情況</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E%E8%8D%89%E7%A8%BF"><span class="nav-number">2.</span> <span class="nav-text">新增草稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A0%90%E8%A6%BD%E8%8D%89%E7%A8%BF"><span class="nav-number">3.</span> <span class="nav-text">預覽草稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%87%E8%8D%89%E7%A8%BF%E8%BD%89%E7%82%BA%E6%AD%A3%E5%BC%8F%E6%96%87%E7%AB%A0%E4%B8%A6%E4%BD%88%E7%BD%B2%E8%87%B3Github"><span class="nav-number">4.</span> <span class="nav-text">將草稿轉為正式文章並佈署至Github</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E7%A8%AE%E8%A1%8C%E7%82%BA-Activities"><span class="nav-number">2.</span> <span class="nav-text">四種行為(Activities)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Coding-%E9%96%8B%E7%99%BC"><span class="nav-number">2.1.</span> <span class="nav-text">Coding(開發)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Testing-%E6%B8%AC%E8%A9%A6"><span class="nav-number">2.2.</span> <span class="nav-text">Testing(測試)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Listening-%E8%81%86%E8%81%BD"><span class="nav-number">2.3.</span> <span class="nav-text">Listening(聆聽)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Designing-%E8%A8%AD%E8%A8%88"><span class="nav-number">2.4.</span> <span class="nav-text">Designing(設計)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%94%E5%A4%A7%E5%83%B9%E5%80%BC-Values"><span class="nav-number">3.</span> <span class="nav-text">五大價值(Values)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Communication-%E6%BA%9D%E9%80%9A"><span class="nav-number">3.1.</span> <span class="nav-text">Communication(溝通)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Simplicity-%E7%B0%A1%E5%96%AE"><span class="nav-number">3.2.</span> <span class="nav-text">Simplicity(簡單)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Feedback-%E5%9B%9E%E9%A5%8B"><span class="nav-number">3.3.</span> <span class="nav-text">Feedback(回饋)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Respect-%E5%B0%8A%E9%87%8D"><span class="nav-number">3.4.</span> <span class="nav-text">Respect(尊重)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Courage-%E5%8B%87%E6%B0%A3"><span class="nav-number">3.5.</span> <span class="nav-text">Courage(勇氣)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E5%A4%A7%E5%8E%9F%E5%89%87-Principles"><span class="nav-number">4.</span> <span class="nav-text">三大原則(Principles)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Feedback-%E5%BF%AB%E9%80%9F%E5%9B%9E%E9%A5%8B"><span class="nav-number">4.1.</span> <span class="nav-text">Feedback(快速回饋)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Assuming-simplicity-%E7%B0%A1%E5%96%AE%E5%81%87%E8%A8%AD"><span class="nav-number">4.2.</span> <span class="nav-text">Assuming simplicity(簡單假設)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Embracing-change-%E5%8C%85%E5%AE%B9%E8%AE%8A%E5%8C%96"><span class="nav-number">4.3.</span> <span class="nav-text">Embracing change(包容變化)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%A6%E8%B8%90-Practice"><span class="nav-number">5.</span> <span class="nav-text">實踐(Practice)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Fine-scale-feedback-%E7%B2%BE%E7%B4%B0%E5%9B%9E%E9%A5%8B"><span class="nav-number">5.1.</span> <span class="nav-text">Fine-scale feedback(精細回饋)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Continuous-process-%E6%8C%81%E7%BA%8C%E8%99%95%E7%90%86"><span class="nav-number">5.2.</span> <span class="nav-text">Continuous process(持續處理)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Shared-understanding-%E5%85%B1%E8%AD%98"><span class="nav-number">5.3.</span> <span class="nav-text">Shared understanding(共識)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Programmer-welfare"><span class="nav-number">5.4.</span> <span class="nav-text">Programmer welfare</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">6.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
